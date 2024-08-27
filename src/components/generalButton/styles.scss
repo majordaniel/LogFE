@@ -1,0 +1,45 @@
+.general-btn{
+  outline: 0;
+  height: 36px;
+  line-height: 32px;
+  min-width: 130px;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+  padding: 0 15px;
+
+  &.accept{
+    background-color: rgb(19, 148, 255);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(19, 148, 255);
+
+    &:hover{
+      background-color: #fff;
+      color: #0096C2;
+    }
+  }
+  &.cancel{
+    color: #293038;
+    background-color: #e2e4e6;
+
+    &:hover{
+      background-color: transparent;
+      border: 2px solid #e2e4e6;
+
+    }
+  }
+  &.regular{
+    background: #fff;
+    color: #333;
+    height: 30px;
+    line-height: 26px;
+    vertical-align: middle;
+    border-color: #fff;
+    min-width: 75px;
+
+    &:hover{
+      background: #eaedf0!important;
+      color: #333;
+    }
+  }
+}

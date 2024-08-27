@@ -1,0 +1,41 @@
+.pane-header{
+  display: flex;
+  justify-content: space-between;
+  background-color:  gray;
+  color: rgb(255, 255, 255);
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  padding: 0 10px 0 18px;
+  border-bottom: 1px solid #e2e4e6 !important;
+
+  @media screen and (max-width: 512px){
+    display: none;
+  }
+  .head-tab{
+    display: flex;
+    align-items: center;
+
+    .back-arrow{
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+
+  .search-icon{
+
+    .icon{
+      cursor: pointer;
+      transition: all 1s ease;
+
+      &.hide{
+        opacity: 0;
+        animation: searchBtnSAnimation .2s ease 0s 1 forwards forwards;
+      }
+      @keyframes searchBtnSAnimation {
+        from{opacity: 1;}
+        to{opacity: 0; display: none;}
+      }
+    }
+  }
+}

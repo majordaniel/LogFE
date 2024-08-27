@@ -1,0 +1,134 @@
+.customer-details {
+  max-height: 100%;
+  overflow-y: hidden;
+
+  .header-avatar {
+    height: 70px;
+    line-height: 70px;
+    background-color: gray;
+    border-bottom: 1px solid rgba(255, 255, 255, .21);
+    padding: 2px 15px;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 17px;
+    }
+
+    .username {
+
+      font-size: 20px;
+      font-weight: 400;
+      //font-style: normal;
+      //font-stretch: normal;
+      //line-height: 2.3;
+      letter-spacing: 1.3px;
+      color: #fff;
+    }
+
+    .close-btn {
+      margin-left: auto;
+      outline: 0;
+      background: rgba(115, 115, 115, .48);
+      color: #fff;
+      cursor: pointer;
+      padding: 6px;
+      border-radius: 100%;
+      width: 30px;
+      height: 30px;
+      transition: all .5s;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .search-box {
+    height: 60px;
+    line-height: 3;
+    backdrop-filter: blur(1.7px);
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      cursor: pointer;
+      color: rgba(0, 0, 0, .31);
+      font-size: 20px;
+      margin-left: 20px;
+    }
+
+    input {
+      height: 60px;
+      width: 100%;
+      background: 0 0;
+      border: none;
+      outline: 0;
+      font-size: 14px;
+      font-weight: 400;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: .8px;
+      color: rgba(0, 0, 0, .34);
+      padding: 0 10px 0 25px;
+    }
+  }
+
+  .tasks {
+    height: calc(100vh - 400px);
+    overflow-y: scroll;
+
+
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background: rgb(19, 148, 255);
+      }
+    }
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #eaedf0;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #eaedf0;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    .task-card {
+      height: auto;
+      padding: 20px 0px;
+
+      &:hover {
+        .task-details {
+          .show-on-map-label {
+            display: none;
+          }
+        }
+      }
+
+      .task-details {
+        .task-status {
+          top: -13px;
+          right: 10px;
+        }
+      }
+    }
+
+
+  }
+}

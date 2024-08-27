@@ -1,0 +1,245 @@
+.header {
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 60px;
+  background-color: black;
+  margin-left: 0;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 29.5px;
+
+  @media (max-width: 768px) {
+    padding-left: 16px;
+  }
+
+
+  .menu-button {
+    align-self: center;
+    margin-right: 15px;
+    cursor: pointer;
+
+    div {
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+
+    div:nth-child(1) {
+      width: 15px;
+    }
+
+    div:nth-child(2) {
+      width: 20px;
+      margin: 4px 0;
+    }
+
+    div:nth-child(3) {
+      width: 15px;
+
+    }
+  }
+
+  .logo {
+    align-self: center;
+    height: fit-content;
+
+    @media (max-width: 768px) {
+      //width: 150px;
+      margin-right: auto;
+    }
+  }
+
+  .filters {
+    align-self: center;
+    display: flex;
+    font-size: 14px;
+
+    .search-btn {
+      background-color: rgb(19, 148, 255);
+      border-color: rgb(19, 148, 255);
+      border: 1px solid #d6d6d6;
+      overflow: visible;
+      border-radius: 3px;
+      min-width: fit-content;
+      margin: 0;
+      line-height: 28px;
+      min-height: 28px;
+      text-transform: capitalize;
+      color: white;
+      box-shadow: none;
+      padding: 0 15px;
+      margin-right: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: transparent;
+        border-color: rgb(19, 148, 255);
+        color: rgb(19, 148, 255);
+
+      }
+    }
+
+    .options {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+
+      .merge-connected-tasks {
+        display: flex;
+        align-items: center;
+
+        span {
+          font-weight: bold;
+        }
+
+        .ant-switch {
+          margin-left: 10px !important;
+        }
+      }
+
+      .icon {
+        width: 15px;
+        height: 15px;
+        font-size: 20px;
+      }
+
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+
+    .map-list {
+      align-self: center;
+
+      @media (max-width: 969px) {
+        display: none;
+      }
+
+      a {
+        color: white;
+        border: 1px solid rgba(230, 230, 230, .61);
+        padding: 5px 10px;
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 13px;
+
+        &:hover {
+          background-color: rgba(158, 158, 158, .2);
+        }
+
+        &.is-active {
+          color: black;
+          background-color: white;
+        }
+
+        .fa {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .date-time {
+      margin-left: 13px;
+    }
+
+    .teams {
+      margin-left: 13px;
+    }
+  }
+
+  .create-task-btn-wrapper {
+    font-size: 14px;
+    font-family: 'montserrat-light' !important;
+    align-self: center;
+    margin-left: auto;
+    color: black;
+    display: flex;
+    cursor: pointer;
+    min-width: 130px;
+
+
+    button {
+      border: none;
+      outline: none;
+      border-radius: 100px 0 0 100px;
+      border-right: 1px solid black;
+      padding-left: 15px;
+      padding-right: 7px;
+      height: 30px;
+      cursor: pointer;
+      background-color: #fff;
+      font-weight: 500;
+
+    }
+
+    .btn-icon {
+      cursor: pointer;
+      border-radius: 0 100px 100px 0;
+      background-color: white;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      width: 30px;
+      justify-content: center;
+    }
+  }
+
+  .header-marketplace {
+    align-self: center;
+
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .refresh-page {
+    align-self: center;
+    padding: 7px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(128, 128, 128, .57);
+    }
+
+    .refresh-page-icon {
+      transform: rotate(-70deg);
+      font-size: 21px;
+    }
+
+    @media (max-width: 969px) {
+      margin-left: 10px;
+    }
+  }
+
+  .customer-header {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .post-header, .charity-header, .doantion-header {
+    margin-left: auto;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+
+  .mobile-filter {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+      align-self: center;
+      margin-left: 10px;
+    }
+  }
+
+}

@@ -1,0 +1,151 @@
+.preference-settings{
+  height: 100%;
+
+  .form-group{
+    margin-bottom: 1rem;
+
+    .page-sub-heading{
+      letter-spacing: .2px;
+      color: rgba(51,51,51,.8);
+      margin: 0 0 5px;
+      font-family: 'proximas-semi-bold', sans-serif;
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+      .panel{
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        background-color: #fff;
+        border: 1px solid transparent;
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0 / 5%, .1);
+        box-shadow: 0 1px 1px rgba(0, 0, 0 / 5%, .1);
+
+        .content{
+          
+
+          .field-label{
+            font-family: 'proximas-regular', sans-serif;
+            text-transform: uppercase;
+            display: block;
+            font-size: 10px;
+            font-weight: 700;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: .6px;
+            color: rgba(0,0,0,.5);
+            margin-bottom: 0;
+            padding: 0 0 1px;
+          }
+
+          select{
+            border: 1px solid #eaeaea;
+            padding: 7px;
+            color: #333;
+            letter-spacing: 1px;
+            font-size: 13px;
+            width: 50%;
+  
+            @media (max-width:575px) {
+              width: 100%;
+            }
+            option{
+              background: transparent;
+              &:hover{
+                background-color: red;
+              }
+            }
+          
+          }
+
+          .check-box{
+            width: 30%;
+            position: relative;
+            border: 1px solid rgba(0,0,0,.1);
+            padding: 13px 20px;
+            border-radius: 3px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            cursor: pointer;
+          
+            @media (max-width:799px) {
+              width: 100%;
+            }
+          
+            input{
+          
+              &[type=checkbox]{
+                width: 20px;
+                opacity: 0;
+                cursor: pointer;
+                z-index: 2;
+            
+                &:checked + .checkmark{
+                  background-color: #1394FF;
+                
+                  &::after{
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    left: 4px;
+                    top: 2px;
+                    width: 6px;
+                    height: 9px;
+                    border: solid white;
+                    border-width: 0 2px 2px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                  }
+                }
+              }
+            }
+            .checkmark {
+              position: absolute;
+              pointer-events: none;
+              cursor: pointer;
+              left: 30px;
+              height: 17px;
+              width: 17px;
+              border-radius: 50%;
+              border: 1px solid rgba(0,0,0,.2);
+              transition: all .3s ease;
+            }
+            .check-label{
+              margin-left: 15px;
+            }
+          }
+        }
+
+        
+        .update-button{
+          text-align: right;
+
+          @media (max-width:580px) {
+            margin-top: 10px;
+          }
+        }
+      }
+  
+  }
+}
+
+  
+
+
+
+
+
+
+
+
+  

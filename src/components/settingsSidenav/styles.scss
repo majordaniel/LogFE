@@ -1,0 +1,68 @@
+.settings-sidenav{
+  background: #f5f7f9;
+  padding-bottom: 38px;
+  list-style-type: none;
+  width: 185px;
+  overflow-y: auto;
+  height: calc(100vh - 60px);
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background: rgba(160,160,160,.13);
+      cursor: pointer;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #1394ff;
+    }
+  .heading{
+    margin: 0;
+    padding: 11px 22px;
+    font-size: 20px;
+    //font-family: 'Playfair Display', sans-serif !important;
+    font-weight: 500;
+
+    .icon{
+      transform: rotate(90deg);
+    }
+  }
+
+  .divider{
+    background: #ccc;
+    border: none;
+    display: list-item;
+    height: 1px;
+    margin: 6px 0 6px 18px;
+    width: 71% !important;
+  }
+
+
+  a{
+
+    .nav-link{
+      border-left: 4px solid transparent;
+      padding: 6px 16px;
+      font-size: 14px;
+      line-height: 16px;
+      -webkit-transition: all .32s;
+      transition: all .32s;
+      letter-spacing: 1px;
+      outline: 0;
+      color: #939393;
+      cursor: pointer;
+  
+      &:hover{
+        color: #282828;
+        background-color: #d7e0e8;
+      }
+    }
+
+    &.is-active{
+        
+      .nav-link{
+        border-left: 4px solid #1394ff;
+        color: #282828;
+        background-color: #d7e0e8;
+      }
+    }
+  }
+}

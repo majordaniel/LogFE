@@ -1,0 +1,140 @@
+.dashboard-delegate{
+  height: 100%;
+}
+
+.single-agent-detail{
+  position: relative;
+  padding: 20px 0px 20px 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 5px 8px 10px;
+  border-radius: 5px;
+  //border-bottom: 1px solid rgba(0,0,0,.14);
+  background-color: #fff;
+  background-clip: border-box;
+  //border: 1px solid rgba(0, 0, 0, 0.125);
+
+
+  &:hover{
+    .task-count{
+      border: 1px solid #4695f6;
+    }
+  }
+
+
+
+  .agent-image{
+    position: relative;
+    //width: 55px;
+
+    img{
+      width: 60px;
+      height: 60px;
+      //border-radius: 50%;
+    }
+
+    .status-dot{
+      position: absolute;
+      right: 11px;
+      bottom: 0;
+      z-index: 3;
+      width: 12.4px;
+      border-radius: 10px;
+      height: 12.4px;
+      background-color: #999;
+      border: 2px solid #fff;
+
+      &.free{
+        background-color: rgb(99, 174, 12);
+      }
+      &.busy{
+        background-color: rgb(33, 150, 243);
+      }
+    }
+  }
+  .agent-details{
+    padding-left: 15px;
+    .agent-name{
+      //font-family: 'Playfair Display' !important;
+      font-size: 15px;
+      margin-bottom: 2px;
+      margin-top: 3px;
+      color: #000;
+      letter-spacing: .5px;
+    }
+    .agent-number{
+      margin-bottom: 4px;
+      font-size: 10px;
+      color: rgba(0,0,0,.6);
+      letter-spacing: -1;
+    }
+    .team-name{
+      margin: 0;
+    }
+  }
+  .message-agent{
+    margin-left: auto;
+
+    svg{
+      margin-bottom: 0 !important;
+    }
+  }
+  .task-count{
+    position: relative;
+    width: 31px;
+    height: 31px;
+    border-radius: 63.3px;
+    text-align: center;
+    -webkit-backdrop-filter: blur(1.9px);
+    backdrop-filter: blur(1.9px);
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.15);
+    font-size: 16px;
+    font-weight: 400;
+    color: #4695f6;
+    line-height: 31px;
+    padding: 0;
+    margin-top: -13px;
+
+    &::after{
+      content: 'task(s)';
+      top: 23px;
+      left: 0;
+      font-size: 14px;
+      color: rgba(0,0,0,.6);
+      position: absolute;
+    }
+
+    &:hover{
+
+      + .task-remaining{
+        display: block;
+      }
+    }
+  }
+  .task-remaining{
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    right: 60px;
+    background-color: #1394FF;
+    color: white;
+    line-height: 20px;
+    padding: 0 7px;
+    border-radius: 5px;
+    max-width: 100px;
+
+
+    &::after{
+      position: relative;
+      font-family: FontAwesome;
+      color: #1394FF;
+      top: -10px;
+      right: -32px;
+      font-size: 20px;
+      content: "\f0da";
+    }
+  }
+}

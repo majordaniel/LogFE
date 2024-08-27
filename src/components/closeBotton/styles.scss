@@ -1,0 +1,8 @@
+.close-btn{
+    transition: transform .4s ease ;
+
+  &:hover{
+    transform: rotate(180deg);
+    cursor: pointer;
+  } 
+}

@@ -1,0 +1,40 @@
+.assign-task-drawer{
+  // position: relative;
+  // overflow-y: visible;
+
+  .ant-drawer-mask {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .ant-drawer-content{
+    overflow:visible;
+  }
+  .ant-drawer-content-wrapper{
+    height: 375px !important;
+  }
+  .ant-drawer-header {
+    display: none;
+  }
+  .ant-drawer-content-wrapper{
+    box-shadow: none !important;
+  }
+  .close-drawer-btn{
+    position: absolute;
+    top: -55px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: white;
+    color: black;
+    font-size: 11px;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+}

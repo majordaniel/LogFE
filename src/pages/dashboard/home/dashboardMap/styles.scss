@@ -1,0 +1,27 @@
+.dashboard-map {
+  height: 100%;
+
+  .map-pin {
+    color: #d10000;
+    font-size: 60px;
+  }
+
+  .pin-view {
+    max-width: 200px;
+    min-width: 150px;
+    margin: 3px;
+    display: flex;
+    flex-direction: row;
+    padding: 2px 2px;
+    align-items: center;
+    cursor: pointer;
+    &:hover{
+      background-color: #d1000060;
+      color: white;
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: calc(100vh - 100px);
+  }
+}

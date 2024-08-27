@@ -1,0 +1,30 @@
+.tasks-list {
+  height: 90%;
+  padding-bottom: 20px;
+  overflow-y: auto;
+  .table-pages-header {
+    position: fixed;
+    .filter {
+      width: 100%;
+    }
+  }
+
+  .task-table {
+    width: 95%;
+    margin: 20px auto;
+    margin-bottom: 0;
+    margin-top: 80px;
+
+    .taskid-id {
+      outline: 0;
+      border: none;
+      color: #2296ff;
+      background-color: transparent;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.dashboard {
+  background-color: white;
+  overflow: hidden;
+
+  &.dashboard-mobile {
+    display: none;
+  }
+
+  .dashboard-task-wrapper {
+    transition: margin .3s ease;
+    max-width: 370px;
+    min-width: 370px;
+
+    &.collapse {
+      transition: margin .3s ease;
+      margin-left: -370px;
+    }
+  }
+
+  .dashboard-map-wrapper {
+    position: relative;
+
+    .analytics-map {
+      position: relative;
+      height: 100%;
+    }
+    .show-map {
+      .dashboard-analytics-map {
+        height: 50%;
+      }
+
+      .dashboard-analytics {
+        height: 50%;
+        position: relative;
+
+        .collapse-sidebar {
+          position: absolute;
+          top: 0;
+          right:  0;
+          margin-top: 0;
+          z-index: 99;
+          border-radius: 4px 4px 0 0;
+        }
+      }
+    }
+
+    .hide-map {
+      .dashboard-analytics-map {
+        //display: none;
+      }
+
+      .dashboard-analytics {
+        //height: 100%;
+        position: relative;
+        .collapse-sidebar {
+          position: absolute;
+          top: 0;
+          right:  0;
+          margin-top: 0;
+          z-index: 99;
+          border-radius: 4px 4px 0 0;
+        }
+      }
+    }
+    .collapse-sidebar {
+      position: absolute;
+      width: 35px;
+      height: 39px;
+      background: #717171;
+      z-index: 1;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 0 0 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.right {
+        top: 0;
+        right: 0;
+        border-radius: 0 0 0 4px;
+      }
+    }
+  }
+
+  .dashboard-delegates-wrapper {
+    transition: margin .3s ease;
+    max-width: 370px;
+    min-width: 370px;
+
+
+    &.collapse {
+      transition: margin .3s ease;
+      margin-right: -370px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &.dashboard-large-screen {
+      display: none;
+    }
+    &.dashboard-mobile {
+      display: block;
+    }
+
+    & > .tab-component {
+
+      & > .ant-tabs {
+        & > .ant-tabs-content-holder {
+          height: calc(100vh - 100px);
+          //  overflow-y: hidden;
+          //  height: fit-content;
+        }
+
+        > .ant-tabs-nav {
+          background-color: #000 !important;
+          height: 45px;
+
+          .ant-tabs-tab-btn {
+            color: white;
+            //font-family: 'montserrat-light' !important;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            text-decoration: none !important;
+            font-size: 11px;
+          }
+
+          .ant-tabs-ink-bar {
+            background: white;
+          }
+        }
+      }
+    }
+  }
+}

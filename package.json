@@ -1,0 +1,64 @@
+{
+  "name": "izigo",
+  "version": "0.1.0",
+  "homepage": "https://izigo-admin.vercel.app",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@reach/combobox": "^0.16.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "antd": "^4.13.1",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.2",
+    "classname": "^0.0.0",
+    "formik": "^2.2.9",
+    "google-map-react": "^2.1.9",
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "react-device-detect": "^1.17.0",
+    "react-dom": "^17.0.2",
+    "react-google-maps": "^9.4.5",
+    "react-icons": "^4.2.0",
+    "react-moment": "^1.1.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "use-places-autocomplete": "^1.9.4",
+    "uuid": "^8.3.2",
+    "web-vitals": "^1.0.1",
+    "yup": "^0.32.9"
+  },
+  "scripts": {
+    "start": "set PORT=3030 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "sass": "^1.63.6",
+    "react-error-overlay": "6.0.9"
+  }
+}

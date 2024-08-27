@@ -1,0 +1,16 @@
+.event-map {
+  .ant-modal-body {
+    height: 400px;
+    // width: 600px;
+  }
+  .map-pin {
+    color: purple;
+    font-size: 18px;
+  }
+  .close-btn {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    cursor: pointer;
+  }
+}

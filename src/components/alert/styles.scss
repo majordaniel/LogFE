@@ -1,0 +1,38 @@
+.alert{
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  max-width: 450px;
+  width: 100%;
+  z-index: 99999;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 16px;
+  letter-spacing: .8px;
+
+  @media (max-width: 578px) {
+    width: 50%;
+  }
+
+  .ant-alert-error {
+    background-color: #323232;
+
+    .ant-alert-message{
+      color: #FF6A6A;
+    }
+    .ant-alert-close-icon .anticon-close{
+      color: #FF6A6A;
+    }
+  }
+  .ant-alert-success {
+    background-color: #f6ffed;
+
+    .ant-alert-success {
+      border: 1px solid green;
+    }
+    .ant-alert-message{
+      color: green;
+    }
+  }
+  
+}

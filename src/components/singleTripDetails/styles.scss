@@ -1,0 +1,85 @@
+.single-trip-details-drawer {
+  transform: none !important;
+
+  .ant-drawer-mask {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .ant-drawer-body {
+    padding: 0;
+  }
+
+  .ant-drawer-content-wrapper {
+    height: calc(100vh - 60px);
+    bottom: 0;
+  }
+  .single-trip-details {
+    .heading {
+      font-size: 16px;
+      letter-spacing: 0.2px;
+      color: rgba(51, 51, 51, 0.8);
+      margin: 0 0 5px;
+      font-weight: 700;
+      border-bottom: 1px solid gray;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .trip-owner {
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        object-position: 50%;
+        border-radius: 50%;
+        margin-right: 12px;
+      }
+      .owner-details {
+        span {
+          display: block;
+        }
+      }
+      .date-created {
+        margin-left: auto;
+        align-self: flex-end;
+      }
+    }
+    .trip-loaction {
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      .location-icon {
+        width: 50px;
+        margin-right: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .location-details {
+        width: 70%;
+        span {
+          display: block;
+        }
+      }
+      .view-map {
+        min-width: fit-content;
+        cursor: pointer;
+      }
+    }
+    .item-images {
+      .images {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+    }
+    .update-status{
+      padding: 10px ;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}

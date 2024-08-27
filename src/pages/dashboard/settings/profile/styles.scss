@@ -1,0 +1,48 @@
+.profile-settings {
+  height: 100%;
+
+  .ant-collapse{
+    border: none;
+  }
+
+  .accordion-container{
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-color: #ddd;
+    -webkit-transition: .4s;
+    transition: .4s;
+    text-align: left;
+    border-bottom: 1px solid rgba(115,100,100,.2);
+
+    .collapse-header{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-family: 'proximas-bold';
+      color: black;
+      letter-spacing: .5px;
+
+      .copllapse-name{
+        font-family: 'proximas-regular', sans-serif;
+        color: #007bff;
+        font-size: 16px;
+        font-weight: 400;
+      }
+  
+      .copllapse-icon{
+        color: #007bff;
+        font-size: 25px;
+        cursor: pointer;
+  
+      }    
+    }
+  }
+
+  .ant-collapse-item-active .collapse-header{      
+  
+    .copllapse-icon{
+      transform: rotate(180deg);
+  
+    }
+  }
+}

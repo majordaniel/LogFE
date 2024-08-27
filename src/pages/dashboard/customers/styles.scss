@@ -1,0 +1,57 @@
+
+.customers {
+  background-color: #FAFAFA;
+  height: 100vh;
+  overflow-y: hidden;
+
+  .table-pages-header {
+
+    .filter {
+
+      .filter-one {
+        margin-right: 10px;
+      }
+    }
+
+  }
+
+  .customers-table {
+    width: 95%;
+    margin: 20px auto;
+    margin-bottom: 0;
+
+    .customers-username {
+      outline: 0;
+      border: none;
+      color: #2296FF;
+      background-color: transparent;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .backdrop {
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  .modal-wrapper {
+    overflow-y: scroll;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+
+    .modal {
+      width: 630px;
+      padding: 0;
+      border-radius: 10px;
+      position: relative;
+      margin: 0 auto;
+    }
+  }
+
+}
+

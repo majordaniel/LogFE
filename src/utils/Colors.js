@@ -1,0 +1,17 @@
+export const PRIMARY = '#4DBC00';
+export const SECONDARY = '#236F8E';
+export const BG_GRAY = '#CAD7DC';
+export const DEFAULT_TEXT = '#8E8E93';
+export const WARNING = '#F4BE36';
+export const ORANGE = '#FF6F00';
+export const DANGER = '#EC514B';
+export const RED = '#D0021B';
+export const SUCCESS = '#27C229';
+export const DARK_SUCCESS = '#10855f';
+export const SUCCESS_INVERSE = 'rgba(242,242,242,0.31)';
+export const YELLOW_TEXT = '#FAFFA0';
+export const INFO = '#00E7FF';
+export const BLUE = '#39B1FF';
+export const WHITE = '#FFFFFF';
+export const GRADIENT = '#0798BF';
+export const TRANSPARENT = 'transparent';

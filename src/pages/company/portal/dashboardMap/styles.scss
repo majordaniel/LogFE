@@ -1,0 +1,12 @@
+.dashboard-map{
+  height: 100%;
+
+  .map-pin{
+    color: purple;
+    font-size: 18px;
+  }
+  @media (max-width: 768px) {
+    height: calc(100vh - 100px);
+   
+  }
+}

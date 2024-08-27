@@ -1,0 +1,72 @@
+.tab-component{
+
+
+  // TABS
+  .ant-tabs-tab{
+    // width: 33%;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 5px 0;
+  }
+  .ant-tabs-top > .ant-tabs-nav{
+    margin-bottom: 0px;
+  }
+  .ant-tabs > .ant-tabs-nav .ant-tabs-nav-list{
+    justify-content: space-around;
+    width: 100%;
+  }
+  .ant-tabs-tab + .ant-tabs-tab{
+    margin: 0 0 0 0;
+  }
+  .ant-tabs-tab .ant-tabs-tab-btn{
+    color: rgba(0,0,0,.41);
+    font-size: 10px;
+    letter-spacing: 1.6px;
+    line-height: 32px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn, .ant-tabs-tab:hover .ant-tabs-tab-btn {
+    color: rgb(14, 14, 14);
+  }
+  .ant-tabs-ink-bar {
+    position: absolute;
+    background:  #d10000;//rgb(19, 148, 255);
+    height: 3px !important;
+    pointer-events: none;
+    transition: none !important;
+  }
+
+  .ant-tabs-content-holder{
+    height: calc(100vh - 142px);
+    overflow-y: scroll;
+
+
+    &:hover{
+      &::-webkit-scrollbar-thumb {
+        background: #d10000;//rgb(19, 148, 255);
+      }
+    }
+      /* width */
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #eaedf0;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #eaedf0;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+  }
+  
+}

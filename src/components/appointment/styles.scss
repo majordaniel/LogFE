@@ -1,0 +1,32 @@
+.appointment-task{
+
+  .ant-collapse{
+    margin-bottom: 15px;
+  }
+  .ant-collapse > .ant-collapse-item:last-child > .ant-collapse-header{
+    background-color: #fff;
+
+    .ant-collapse-arrow{
+      color: rgba(0,0,0,.2);
+    }
+  }
+  .collapse-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'proximas-bold';
+    color: black;
+    letter-spacing: .5px;
+
+    .remove-task-icon{
+      color: rgba(0,0,0,.2);
+      font-size: 20px;
+      cursor: pointer;
+      
+      &:hover{
+        color:#ff3e3e;
+      }
+
+    }
+  }
+}

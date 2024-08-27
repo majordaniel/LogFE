@@ -1,0 +1,110 @@
+.task-details-tab{
+
+  // DRAWER STYLES
+  .ant-drawer-content-wrapper{
+    height: calc(100% - 40px) !important;
+
+    @media (max-width:768px) {
+      height: calc(100vh - 110px) !important;
+      
+    }
+  }
+  .ant-drawer.ant-drawer-open .ant-drawer-mask{
+    display: none;
+  }
+  .ant-drawer-header {
+    display: none;
+  }
+  .ant-drawer-body{
+    padding: 0;
+  }
+  .ant-drawer-content{
+    overflow:visible;
+  }
+ 
+
+  // TAB STYLES
+  .tab-component{
+    .ant-tabs-content-holder{
+      height: calc(100vh - 100px);
+      .ant-tabs-content{
+        // height: 100%;
+        height: fit-content;
+      }
+
+    }
+  }
+  .ant-tabs > .ant-tabs-nav .ant-tabs-nav-list{
+    width: 100%;
+  }
+  .ant-tabs-nav{
+    position: absolute;
+    width: 100%;
+    z-index: 4;
+  }
+  .ant-tabs-tab .ant-tabs-tab-btn{
+    //font-family: 'Playfair Display';
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 30.98px;
+    letter-spacing: .4px;
+
+  }
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn, .ant-tabs-tab:hover .ant-tabs-tab-{
+    color: rgb(70, 70, 70);
+  }
+  .close-detalis-btn{
+    position: absolute;
+    top: -35px;
+    right: 5px;
+    outline: 0;
+    color: white;
+    border: none;
+    font-size: 11px;
+    z-index: 1;
+    cursor: pointer;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(33,33,33,.34);
+    transition: transform .4s ease ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+
+    &.show-btn{
+      // animation: closeBtnAnimation 1s ease 0s 1 forwards forwards;
+      animation-name: closeBtnAnimation;
+      animation-duration: .6s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes closeBtnAnimation {
+      from{ visibility: hidden; right: -20px;}
+      to{visibility: visible; right: 5px; }
+    }
+
+  }
+  .more{
+    padding-left: 0;
+    
+
+    .dropdown{
+      left: 0px;
+      width: max-content;
+      &::before{
+        top: -8px;
+        left: 4px;
+        width: 10px;
+        border-bottom: 8px solid white;
+      }
+    }
+  }
+  
+}
+  

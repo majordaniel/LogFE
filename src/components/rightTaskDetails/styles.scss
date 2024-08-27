@@ -1,0 +1,19 @@
+.customer-drawer{
+  font-family: 'montserrat-light';
+
+  .ant-drawer-content-wrapper{
+    height: calc(100% - 60px) !important;
+    bottom: 0;
+  }
+  .ant-drawer-mask{
+    background: rgba(0,0,0,.85) !important;
+  }
+  .ant-drawer-body{
+    padding: 0;
+  }
+
+  .tab-component .ant-tabs-tab .ant-tabs-tab-btn{
+    font-size: 12px;
+    font-weight: 400;
+  }
+}

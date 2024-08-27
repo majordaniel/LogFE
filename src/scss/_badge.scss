@@ -1,0 +1,64 @@
+@each $prop, $value in $theme-colors {
+  .badge.bg-#{$prop} {
+    background: $value;
+  }
+}
+.badge {
+  text-transform: none;
+}
+
+
+.badge-circle {
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 0 !important;
+    width: 1.25rem;
+    height: 1.25rem;
+    font-size: .75rem;
+    font-weight: 600
+}
+
+.badge-circle.badge-md {
+    width: 1.5rem;
+    height: 1.5rem
+}
+
+.badge-circle.badge-lg {
+    width: 2rem;
+    height: 2rem
+}
+
+.badge-dot {
+    padding-left: 0;
+    padding-right: 0;
+    background: transparent;
+    font-weight: 400;
+    font-size: .875rem;
+    text-transform: none
+}
+
+.badge-dot strong {
+    color: #343a40
+}
+
+.badge-dot i {
+    display: inline-block;
+    vertical-align: middle;
+    width: .375rem;
+    height: .375rem;
+    border-radius: 50%;
+    margin-right: .375rem
+}
+
+.badge-dot.badge-md i {
+    width: .5rem;
+    height: .5rem
+}
+
+.badge-dot.badge-lg i {
+    width: .625rem;
+    height: .625rem
+}

@@ -1,0 +1,66 @@
+.mobile-filter-dropdown{
+
+    .filter-icon{
+      font-size: 21px;
+    }
+
+
+  .filter-dropdown{
+    position: absolute;
+    color: white;
+    background-color: #333;
+    height: fit-content;
+    width: 100%;
+    top: 60px;
+    left: 0px;
+    padding: 20px 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 3;
+
+    .date{
+      margin-right: 15px;
+      width: 48%;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .team{
+      width: 48%;
+    }
+    .market-place-wrapper{
+      margin-top: 30px;
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .dropdown-filter{
+      margin-right: 15px;
+      margin-bottom: 10px;
+    }
+
+    .general-btn.regular{
+      margin-bottom: 10px !important;
+    }
+
+    @media (max-width:467px) {
+      padding: 20px 10px 0;
+
+      .date{
+        width: fit-content;
+      }
+      .team{
+        width: fit-content;
+      }
+    }
+    @media (max-width: 334px) {
+      .team{
+        margin-top: 10px;
+      }
+      .market-place-wrapper{
+        margin-top: 10px;
+      }
+    }
+  }
+}

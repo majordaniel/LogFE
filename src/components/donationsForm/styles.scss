@@ -1,0 +1,122 @@
+.post-form{
+  
+  .form-header{
+    padding: 15px;
+    
+    h3{
+      letter-spacing: 1.5px;;
+      color: #666666;
+      font-size: 30px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  
+  
+  .form-row{
+    // padding: 10px;
+    padding-bottom: 0;
+    width: 100%;
+    display: flex;
+
+    @media (max-width:768px) {
+      flex-wrap: wrap;
+    }
+    
+    .form-col{
+      position: relative;
+      padding: 15px;
+      padding-bottom: 0;
+      width: 100%;
+      min-width: 50%;
+
+      @media (max-width:768px) {
+        width: 100%;
+        min-width: 100%;
+      }
+      
+      
+      label{
+        text-transform: uppercase;
+        display: block;
+        font-size: 10px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: .6px;
+        color: rgba(0,0,0,.5);
+        margin-bottom: 10px;;
+        
+        &.required::after{
+          content: '*';
+          font-size: 10px;
+          margin-left: 2px;
+          color: #FF0000;
+        }
+      }
+      input{
+        width: 100%;
+        background: 0 0;
+        border: none;
+        outline: 0;
+        border-bottom: 1px solid #c8c8c8;
+        padding: 3px 10px 10px;
+        border-radius: 0;
+        color: rgba(0,0,0,.71);
+        letter-spacing: .9px;
+        position: relative;
+        
+        &:focus{
+          border-bottom-color: #4695f6;
+        }
+
+        &[type=file]{
+          border-bottom: none;
+        }
+      }
+      select{
+        padding: 3px 10px 10px;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #c8c8c8;
+        -moz-appearance:none; /* Firefox */
+        -webkit-appearance:none; /* Safari and Chrome */
+        appearance:none;
+      }
+      textarea{
+        resize: none;
+        height: 81px;
+        width: 100%;
+        min-height: 40px;
+        border-radius: 2px;
+        line-height: 16px;
+        font-size: 12px;
+        padding: 10px;
+        border: 0;
+        border-bottom: 1px solid #c8c8c8;
+        
+        &:focus{
+          border-bottom: 1px solid #4695f6;
+        }
+      }
+    }
+  }
+  .form-footer{
+    max-width: none;
+    width: auto;
+    height: 60px;
+    text-align: right;
+    padding: 17px 0;
+    border-top: 1px solid #d8d8d8;
+    margin-top: 20px;
+
+    @media (max-width: 345px) {
+      .general-btn{
+        min-width: 45%;
+      }
+    }
+  }
+}

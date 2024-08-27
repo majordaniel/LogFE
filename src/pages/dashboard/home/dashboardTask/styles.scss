@@ -1,0 +1,14 @@
+.dashboard-task{
+  height: 100%;
+
+  @media (max-width: 768px) {
+    // height: 100px !important;
+    .pane-header{
+      display: none;
+    }
+  }
+}
+.unassigned-task {
+  height: calc(100vh - 142px);
+  overflow-y: scroll;
+}

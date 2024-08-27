@@ -1,0 +1,52 @@
+.filter-date{
+
+  .date-time-select-btn{
+    display: flex;
+    cursor: pointer;
+
+    &:hover{
+      background-color: rgba(158,158,158,.2); 
+    }
+    .date-time-selected{
+      cursor: pointer;
+      border: 1px solid rgba(230,230,230,.61);
+      height: 28px;
+      vertical-align: middle;
+      padding: 0px 10px;
+    }
+    .caret-icon{
+      width: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid rgba(230,230,230,.61);
+      border-left: none;
+      cursor: pointer;
+      .fa-caret-down{
+        transition: transform 0.3s ease;
+      }
+      .caret-rotate{
+        transform: rotate(180deg);
+      } 
+    }
+
+  }
+  .modal{
+    top: 43px;
+  }
+}
+
+.filter-date-picker{
+  .ant-picker-panel-container{
+    position: relative !important;
+    left: -20px !important;
+    top: -40px !important;
+  }
+  .ant-picker-panel .ant-picker-footer{
+    display: none;
+  }
+  .ant-picker-header-next-btn, .ant-picker-header-super-next-btn, .ant-picker-header-prev-btn, .ant-picker-header-super-prev-btn{
+    display: none;
+  }
+
+}
